@@ -42,7 +42,8 @@ rl <- rate_limit()
 
 print(rl)
 
-### Delete Tweets
+### Delete Tweets. Twitter's API can only display the most recent 3200 Tweets per account. 
+### In case you're a heavy user, repeat the process.
 
 # get timeline
 
@@ -69,7 +70,8 @@ for (i in 1:length(twIds)) {
   print(i)
 }
 
-# delete old favourites
+# delete old favourites. Twitter's API can only display the most recent 3000 faved tweets per account. 
+# In case you're a heavy user, repeat the process.
 
 # get favs
 
